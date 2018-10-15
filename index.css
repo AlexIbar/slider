@@ -47,6 +47,9 @@
 .conte:hover .controls{
     display: block
 }
+.conte{
+    width: 50%
+}
 .agrandar{
     transition: width 4.2s linear;
     width: 100% !important
@@ -68,4 +71,17 @@
 }
 .aparece{
     animation: mueve 4.5s
+}
+@media(max-width:600px){
+    .content-slider{
+        display:block;
+        width: 100%;
+        height: 310px
+    }
+    .conte{
+        width: 100%
+    }
+    .letra{
+        width: 100%
+    }
 }
