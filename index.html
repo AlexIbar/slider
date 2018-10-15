@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+       <meta charset="utf-8">
+        <title>refdfev</title>
+        <meta name=”viewport” content=”width=device-width, initial-scale=1.0″>
+        <script defer src="/js/todos.js" integrity="sha384-L469/ELG4Bg9sDQbl0hvjMq8pOcqFgkSpwhwnslzvVVGpDjYJ6wJJyYjvG3u8XW7" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="./index.css">
+        <script>
+            if('serviceWorker' in navigator){
+                window.addEventListener('load', function(){
+                    navigator.serviceWorker.register('/sw.js')
+                    .then((registro)=>{
+                        console.log(registro)
+                    })
+                    .catch((err)=>{
+                        console.log(err)
+                    })
+                })
+            }
+        </script>
+    </head>
+    <body>
+        <header class="content-slider">
+            <div style="width:50%" class="conte">
+                <div class="imagenes"><div id="uno" class="invi"><img src="./images/uno.jpeg" alt=""></div><div id="dos" class="invi"><img src="./images/dos.jpg" alt=""></div><div id="tres" class="invi"><img src="./images/tras.jpg" alt=""></div><div id="tres" class="invi"><img src="./images/cinco.jpg" alt=""></div></div>
+                <div id="carga-slider"></div>
+                <div class="bolas"></div>
+                <div class="controls">
+                    <div id="control1" style="display:none"><span class="fas fa-play"></span></div>
+                    <div id="control2"><span class="fas fa-pause"></span></div>
+                </div>
+            </div>
+            <div class="letra">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloremque pariatur tempore distinctio cum, assumenda recusandae quam atque modi debitis cumque repudiandae voluptatum ipsam tempora ab perferendis inventore animi aliquam quaerat.
+            </div>
+        </header>
+        <main>
+            <img src="/images/images.jfif" alt="">
+            <img src="/images/aa.jpg" alt="">
+        </main>
+        <script>
+            function $(param){
+                return document.querySelector(param)
+            }
+        </script>
+        <script src="./lib.js"></script>
+        <script>
+            var S = new Slider('.imagenes', '.bolas')
+            S.inicial()
+            function aqui(e){
+                S.parar()
+                S.lista=parseInt(e)
+                setTimeout(()=>S.reiniciar(),10)
+                $('#control2').style.display='block'
+                $('#control1').style.display='none'
+            }
+            function aumentar(){
+                S.mas()
+            }
+            function disminuir(){
+                S.menos()
+            }
+            $('#control1').addEventListener('click',function(){
+                $('#control2').style.display='block'
+                $('#control1').style.display='none'
+                S.inicial()
+            })
+            $('#control2').addEventListener('click',function(event){
+                 $('#control1').style.display="block"
+                 $('#control2').style.display="none"
+                 S.parar()
+            })
+        </script>
+    </body>
+</html>
