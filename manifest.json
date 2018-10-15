@@ -3,10 +3,10 @@
   "short_name": "nitvel",
   "theme_color": "#068ffb",
   "background_color": "#ae77f8",
-  "display": "fullscreen",
-  "orientation": "standalone",
-  "Scope": "/",
-  "start_url": "/",
+  "display": "standalone",
+  "orientation": "landscape,
+  "Scope": "https://alexibar.github.io/slider/index.html",
+  "start_url": "https://alexibar.github.io/slider/index.html",
   "icons": [
     {
       "src": "./images/icons/icon-72x72.png",
