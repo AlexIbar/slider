@@ -4,7 +4,7 @@
   "theme_color": "#068ffb",
   "background_color": "#ae77f8",
   "display": "standalone",
-  "orientation": "landscape,
+  "orientation": "landscape",
   "Scope": "https://alexibar.github.io/slider/index.html",
   "start_url": "https://alexibar.github.io/slider/index.html",
   "icons": [
