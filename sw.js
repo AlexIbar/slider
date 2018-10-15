@@ -1,15 +1,15 @@
 var name = 'name-v1',
     urls = [
-        '/images/cinco.jpg',
-        '/images/dos.jpg',
-        '/images/tras.jpg',
-        '/images/tres.jpg',
-        '/images/uno.jpg',
-        '/images/uno.jpeg',
-        '/index.html',
-        '/index.css',
-        '/lib.js',
-        '/js/todos.js'
+        './images/cinco.jpg',
+        './images/dos.jpg',
+        './images/tras.jpg',
+        './images/tres.jpg',
+        './images/uno.jpg',
+        './images/uno.jpeg',
+        './index.html',
+        './index.css',
+        './lib.js',
+        './js/todos.js'
     ]
 self.addEventListener('install', function(event){
     event.waitUntil(
