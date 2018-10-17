@@ -4,7 +4,6 @@
   "theme_color": "#068ffb",
   "background_color": "#ae77f8",
   "display": "standalone",
-  "orientation": "landscape",
   "Scope": "/slider/index.html",
   "start_url": "/slider/index.html",
   "icons": [
