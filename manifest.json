@@ -5,8 +5,8 @@
   "background_color": "#ae77f8",
   "display": "standalone",
   "orientation": "landscape",
-  "Scope": "https://alexibar.github.io/slider/index.html",
-  "start_url": "https://alexibar.github.io/slider/index.html",
+  "Scope": "/slider/index.html",
+  "start_url": "/slider/index.html",
   "icons": [
     {
       "src": "./images/icons/icon-72x72.png",
