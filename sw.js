@@ -10,7 +10,7 @@ var name = 'name-v1',
         './index.css',
         './lib.js',
         './js/todos.js',
-        '/slider'
+        '/slider/'
     ]
 self.addEventListener('install', function(event){
     event.waitUntil(
